@@ -1,0 +1,2 @@
+# MyStok
+ComputerStock
