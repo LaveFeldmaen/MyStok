@@ -1,0 +1,365 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Msmf.admin.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <script src="js/MyJavaScript.js"></script>//10
+   <script src="js/jquery-3.3.1.js"></script>//10
+    <script src="js/jquery.canvasjs.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4e7da88777.js"></script>
+    
+    
+
+
+
+   <!--  קישור לכפתורי דאטא טיבל  -->
+    <link href="css/buttons.bootstrap.min.css" rel="stylesheet">
+     <link href="css/buttons.bootstrap4.min.css" rel="stylesheet">
+     <link href="css/buttons.dataTables.min.css" rel="stylesheet">
+     <link href="css/buttons.foundation.min.css" rel="stylesheet">
+     <link href="css/buttons.jqueryui.min.css" rel="stylesheet">
+     <link href="css/buttons.semanticui.min.css" rel="stylesheet">
+      <link href="css/common.scss" rel="stylesheet">
+    <link href="css/mixins.scss" rel="stylesheet">
+ 
+ <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+ 
+    <link href="css/Btn.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+     <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet">//9
+
+
+    
+     <script src="js/dataTables.bootstrap4.min.js"></script>//12
+    <script src="js/jquery.dataTables.min.js"></script>//11
+   <script src="js/metisMenu/metisMenu.min.js"></script>//13
+
+   
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="dist/js/sb-admin-2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/MyChrte.js"></script>
+    
+<!-- קישור דאטא  -->
+   
+
+   
+   
+  
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+   
+    <div id="wrapper">
+    <!-- Navigation -->
+    <header class="align-items-start app-header flex-column flex-md-row navbar navbar-expand-md navbar-light bg-blu-3">
+        <div class="align-items-baseline d-flex flex-row navbar-brand">
+            <a class="" href="#"></a>
+            <button class="collapsed ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#side-menu-wrapper" aria-controls="side-menu" aria-expanded="false" aria-label="Toggle navigation" style="
+">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/mystock.png" width="170"></a>
+        </div>
+
+        <ul class="nav navbar-nav mr-md-auto flex-row navbar-top-links">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                   <i class="fa fa-envelope fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-messages dropdown-menu-right">
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                            <span class="float-left text-muted">
+                                <em>Yesterday</em>
+                            </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                            <span class="float-left text-muted">
+                                <em>Yesterday</em>
+                            </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                            <span class="float-left text-muted">
+                                <em>Yesterday</em>
+                            </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item see-more text-center" href="#">
+                        <strong>Read All Messages</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-tasks fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-tasks">
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <p>
+                                <strong>Task 1</strong>
+                                <span class="float-left text-muted">40% Complete</span>
+                            </p>
+                            <div class="progress active">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <p>
+                                <strong>Task 2</strong>
+                                <span class="float-left text-muted">20% Complete</span>
+                            </p>
+                            <div class="progress active">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <p>
+                                <strong>Task 3</strong>
+                                <span class="float-left text-muted">60% Complete</span>
+                            </p>
+                            <div class="progress active">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <p>
+                                <strong>Task 4</strong>
+                                <span class="float-left text-muted">80% Complete</span>
+                            </p>
+                            <div class="progress active">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item see-more text-center" href="#">
+                        <strong>See All Tasks</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-bell fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-alerts">
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <i class="fa fa-comment fa-fw"></i> New Comment
+                            <span class="float-left text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                            <span class="float-left text-muted small">12 minutes ago</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <i class="fa fa-envelope fa-fw"></i> Message Sent
+                            <span class="float-left text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <i class="fa fa-tasks fa-fw"></i> New Task
+                            <span class="float-left text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div>
+                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                            <span class="float-left text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item see-more text-center" href="#">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user fa-fw"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-user">
+                    <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i> פרופיל משתמש</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i> הגדרות</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out fa-fw"></i> התנתק</a>
+                </div>
+            </li>
+        </ul>
+      
+    </header>
+    <div class="d-md-flex">
+        <div class="sidebar" role="navigation">
+            <div class="sidebar-nav collapse navbar-collapse show" id="side-menu-wrapper">
+                <ul class="nav navbar-nav navbar-collapse flex-column side-nav list-group" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form d-ltr">
+                            <span class="input-group-btn">
+                                <button class="btn btn-white" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            <input type="text" class="form-control d-rtl" placeholder="Search...">
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                      <li class="list-group-item">
+                        <a href="SystemAdministrator.aspx"><img src="images/profile.png" width="35" height="35"/>מנהל מערכת</a>
+                    </li>
+             
+                    <li class="list-group-item">
+                        <a href="SupplierOrders.aspx"><img src="images/inventory.png" width="35" height="35"/>הזמנות ספקים</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="CustOrders.aspx"><img src="images/shopping-cart.png" width="35" height="35"/>הזמנות לקוחות</a>
+                       
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Stok.aspx">  <img src="images/shelf.png" width="35" height="35"/>המלאי שלי</a>
+                     </li>
+                       <li class="list-group-item">
+                        <a href="Reports.aspx"><img src="images/report.png" width="35" height="35"/> דוחו"ת</a>
+                    </li>
+                     <li class="list-group-item">
+                        <a href="Customers.aspx"><img src="images/customer-satisfaction.png" width="35" height="35"/> לקוחות</a>
+                    </li>                                  
+                      <li class="list-group-item">
+                        <a href="Customers.aspx"><img src="images/hierarchy-structure.png" width="35" height="35"/> עובדים</a>
+                    </li>
+                  
+                               
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-wrapper" class="p-4" style="min-height: 606px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <%--<h1 class="page-header">Blank</h1>--%>
+                          
+         <form id="form2" runat="server">
+            <asp:ContentPlaceHolder ID="MainConten" runat="server">
+            </asp:ContentPlaceHolder>
+    
+    </form>
+     
+
+
+                    </div>
+                    <!-- /.col-xl-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+  
+     
+     
+    
+
+    <!-- Bootstrap Core JavaScript -->
+    
+
+    <!-- Metis Menu Plugin JavaScript -->
+ 
+             <div id="page-wrapper">
+ 
+        </div>
+    
+    
+  
+
+  
+
+</body>
+</html>
